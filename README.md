@@ -1,2 +1,2 @@
 # docker-demo
-![docker recap.png](..%2F..%2FUsers%2FAdmin%2FDesktop%2Fdocker%20recap.png)
+![docker recap](https://github.com/user-attachments/assets/9688542d-97e5-4162-b39f-a0dc48ef37a1)
