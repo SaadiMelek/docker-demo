@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: docker-demo
+# create database "docker-demo-db";
+  datasource:
+    url: jdbc:postgresql://localhost:5433/docker-demo-db # replace localhost with : postgres-sql-new
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+# https://www.hostinger.com/tutorials/docker-cheat-sheet
