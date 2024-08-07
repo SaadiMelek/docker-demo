@@ -1,0 +1,73 @@
+docker exec -it postgres-sql psql -U postgres
+
+docker start 39ad0991ec32
+
+docker exec -it postgres-sql-anonymous psql -U postgres 
+
+docker rm d3570ad8cac1
+
+
+docker run --name postgres-sql-new -p 5433:5432 -d -e POSTGRES_PASSWORD=password -v C:/docker/postgres/data:/var/lib/postgres/data postgres
+
+
+docker logs competent_proskuriakova
+
+
+docker exec -it competent_proskuriakova psql -U postgres
+
+
+docker build it spring/docker-demo .
+
+
+docker run spring/docker-demo 
+
+
+.\mvnw clean package
+
+
+docker build .
+
+
+docker build -t spring/docker-demo .
+
+
+docker images
+
+
+docker ps -a
+
+
+docker network create spring-boot-net
+
+docker network ls
+
+docker network connect spring-boot-net postgres-sql-new
+
+
+docker run --net spring-boot-net spring/docker-demo
+
+
+docker run -p 8080:8080 --net spring-boot-net spring/docker-demo
+
+
+docker-compose down
+
+
+docker-compose up
+
+
+ docker run -p 8088:8080 --net spring-boot-net spring/docker-demo
+ 
+ docker run --net spring-boot-net spring/docker-demo
+ 
+ 
+ docker network ls
+ 
+ 
+ docker network disconnect spring-boot-net postgres-sql-new
+ 
+ 
+ docker network stop 7f4b6846eda4
+ 
+ 
+ docker build -t spring/docker-demo .
