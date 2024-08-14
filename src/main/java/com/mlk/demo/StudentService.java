@@ -9,4 +9,9 @@ public interface StudentService {
     Student findByEmail(String email);
     Student update(Student s);
     void delete(String email);
+
+    StudentDto saveStudent(StudentDto dto);// just for unit Test
+    List<StudentDto> findAllStudentsDtos();// just for unit Test
+    StudentDto findStudentById(Integer id);// just for unit Test
+    List<StudentDto> findAllByName(String name);// just for unit Test
 }

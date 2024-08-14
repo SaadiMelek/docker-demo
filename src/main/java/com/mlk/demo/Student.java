@@ -43,6 +43,16 @@ public class Student {
         this.age = age;
     }
 
+    public Student(
+            String firstname,
+            String lastname,
+            String email
+    ) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.email = email;
+    }
+
     public Student() {
     }
 
